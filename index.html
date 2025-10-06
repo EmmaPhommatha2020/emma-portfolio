@@ -1,235 +1,149 @@
-<!doctype html>
-<html lang="en" data-bs-theme="light">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emma Phommatha | Application Support Specialist</title>
-  <meta name="description" content="Portfolio of Emma Phommatha, Application Support & IT professional." />
 
-  <!-- Bootstrap / Icons / Animate.css -->
+  <!-- META / SEO -->
+  <meta name="description" content="Portfolio of Emma Phommatha – Application Support Specialist, Cybersecurity & Automation.">
+  <meta property="og:title" content="Emma Phommatha | Portfolio">
+  <meta property="og:description" content="IT Support & Cybersecurity Specialist Portfolio">
+  <meta property="og:image" content="dog-placeholder.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Animate.css -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Custom -->
   <link href="styles.css" rel="stylesheet">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
 
-  <!-- ===== NAVBAR ===== -->
-  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top bg-body-tertiary shadow-sm">
+<body class="dark-mode">
+
+  <!-- 🔹 NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#home">EP<span class="text-primary">.</span></a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
-              aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand fw-bold text-primary" href="#">Emma Phommatha</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div id="nav" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          <li class="nav-item">
-            <button id="themeToggle" class="btn btn-sm btn-outline-primary ms-lg-2" type="button"
-                    aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
-          </li>
+      <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- ===== HERO ===== -->
-  <header id="home" class="py-6 py-lg-7 bg-gradient position-relative overflow-hidden">
-    <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-12 col-lg-6 text-center text-lg-start">
-          <span class="badge rounded-pill text-bg-primary mb-3 animate__animated animate__fadeInDown">
-            Application Support Specialist
-          </span>
-          <h1 class="display-5 fw-bold lh-sm animate__animated animate__fadeInUp">
-            Hi, I’m <span class="text-primary">Emma Phommatha</span>
-          </h1>
-          <p class="lead text-secondary mt-3 animate__animated animate__fadeInUp animate__delay-1s">
-            I troubleshoot business apps, streamline fixes, and craft documentation that reduces repeat issues.
-          </p>
-          <div class="d-flex gap-2 justify-content-center justify-content-lg-start mt-4">
-            <a class="btn btn-primary btn-lg" href="#contact"><i class="bi bi-send me-2"></i>Contact Me</a>
-            <a class="btn btn-outline-secondary btn-lg" href="#experience"><i class="bi bi-person-workspace me-2"></i>My Experience</a>
-          </div>
-        </div>
-
-        <div class="col-12 col-lg-6 d-flex justify-content-center">
-          <!-- Dog photo in hero section -->
-          <figure class="photo-wrap shadow-lg animate__animated animate__zoomIn">
-            <img src="dog-placeholder.jpg" class="img-fluid rounded-4 floating"
-                 alt="Golden retriever in a blue raincoat with rubber ducks">
-          </figure>
-        </div>
+  <!-- 🔹 HERO -->
+  <header class="hero container text-center py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h1 class="display-5 text-light">Hi, I'm <span class="text-primary">Emma</span></h1>
+        <h2 id="typed-text" class="text-secondary mt-3"></h2>
+        <a href="#contact" class="btn btn-primary btn-lg mt-4 animate__animated animate__fadeInUp">Get in Touch</a><br>
+        <a href="Interview_ApplicationSupportSpecialist.pdf" class="btn btn-outline-light mt-3" download>📄 Download Resume</a>
+      </div>
+      <div class="col-md-6" data-aos="zoom-in">
+        <img src="dog-placeholder.jpg" class="img-fluid rounded shadow-lg" alt="Portfolio image" loading="lazy">
       </div>
     </div>
   </header>
 
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="py-6">
-    <div class="container">
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-6">
-          <h2 class="mb-3">About Me</h2>
-          <p class="text-secondary">
-            Application Support & IT professional with hands-on experience troubleshooting business
-            applications, end-user systems, and networks. CompTIA A+ and ITIL® 4 Foundation certified.
-            Skilled in ticketing/incident management, documentation, and scripting to improve efficiency.
-          </p>
-          <ul class="list-unstyled small text-secondary">
-            <li><i class="bi bi-geo-alt text-primary me-2"></i>Austin, TX</li>
-            <li><i class="bi bi-envelope text-primary me-2"></i>
-              <a href="mailto:emma.phommatha@gmail.com">emma.phommatha@gmail.com</a></li>
-            <li><i class="bi bi-linkedin text-primary me-2"></i>
-              <a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-6">
-          <div class="row g-3">
-            <div class="col-6">
-              <div class="stat p-4 text-center border rounded-4">
-                <div class="fs-2 fw-bold text-primary">SLA</div>
-                <p class="small text-secondary mb-0">Escalation & triage</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="stat p-4 text-center border rounded-4">
-                <div class="fs-2 fw-bold text-primary">Docs</div>
-                <p class="small text-secondary mb-0">KBs & runbooks</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>      
+  <!-- 🔹 ABOUT -->
+  <section id="about" class="py-5">
+    <div class="container text-center" data-aos="fade-up">
+      <h2 class="text-primary mb-3">About Me</h2>
+      <p class="text-light lead">
+        I’m pursuing my Bachelor’s in Cybersecurity & Information Assurance at WGU (graduating Dec 2026).  
+        Alongside school, I work in IT Support—resolving Windows, VPN, and networking issues while documenting fixes in runbooks & KBs.  
+        I’m passionate about process improvement, automation, and helping users stay productive.
+      </p>
     </div>
   </section>
 
-  <!-- ===== SKILLS ===== -->
-  <section id="skills" class="py-6 bg-body-secondary">
+  <!-- 🔹 SKILLS -->
+  <section id="skills" class="py-5 bg-gradient-dark">
     <div class="container">
-      <h2 class="mb-4 text-center">Skills</h2>
-      <div class="row g-3">
-        <div class="col-md-6 col-lg-3">
-          <div class="p-4 border rounded-4 h-100">
-            <h6 class="fw-bold mb-2"><i class="bi bi-tools me-2 text-primary"></i>Application & User Support</h6>
-            <p class="small text-secondary mb-0">Windows 10/11 • VPN/Wi-Fi • Printers & peripherals</p>
+      <h2 class="text-primary text-center mb-4" data-aos="fade-down">Technical Skills</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-right"><div class="skill-card">Windows & Network Support</div></div>
+        <div class="col-md-4" data-aos="fade-up"><div class="skill-card">Documentation & Runbooks</div></div>
+        <div class="col-md-4" data-aos="fade-left"><div class="skill-card">Automation (Python, Bash)</div></div>
+        <div class="col-md-4" data-aos="flip-left"><div class="skill-card">JIRA / Ticketing Systems</div></div>
+        <div class="col-md-4" data-aos="zoom-in"><div class="skill-card">Cybersecurity Principles</div></div>
+        <div class="col-md-4" data-aos="flip-right"><div class="skill-card">Web Development (HTML CSS JS)</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 PROJECTS -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-primary text-center mb-5" data-aos="fade-down">Highlighted Projects</h2>
+
+      <div class="text-center mb-4">
+        <button class="btn btn-outline-primary filter-btn active" data-filter="all">All</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="automation">Automation</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="documentation">Documentation</button>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 project-card" data-category="automation" data-aos="zoom-in">
+          <div class="card bg-dark text-light border-0 shadow-lg h-100">
+            <img src="dog-placeholder.jpg" class="card-img-top" alt="Project" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title text-primary">VPN Diagnostic Tool</h5>
+              <p class="card-text">Python + Batch utility automating VPN pre-checks; triage time cut from 7 min to 1 min.</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="p-4 border rounded-4 h-100">
-            <h6 class="fw-bold mb-2"><i class="bi bi-ticket-detailed me-2 text-primary"></i>Ticketing & Workflow</h6>
-            <p class="small text-secondary mb-0">JIRA • Incident triage • Escalation management</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="p-4 border rounded-4 h-100">
-            <h6 class="fw-bold mb-2"><i class="bi bi-journal-text me-2 text-primary"></i>Documentation & Training</h6>
-            <p class="small text-secondary mb-0">User guides • Onboarding checklists • KBs</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="p-4 border rounded-4 h-100">
-            <h6 class="fw-bold mb-2"><i class="bi bi-cpu me-2 text-primary"></i>Technical Skills</h6>
-            <p class="small text-secondary mb-0">Python • Bash • JavaScript • Power BI (basic)</p>
+
+        <div class="col-md-6 project-card" data-category="documentation" data-aos="zoom-in" data-aos-delay="150">
+          <div class="card bg-dark text-light border-0 shadow-lg h-100">
+            <img src="dog-placeholder.jpg" class="card-img-top" alt="Project" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title text-primary">KB Template Builder</h5>
+              <p class="card-text">Markdown-based KB template with auto-tagging + review reminders; boosts doc speed.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== EXPERIENCE ===== -->
-  <section id="experience" class="py-6">
-    <div class="container">
-      <h2 class="mb-4 text-center">Experience</h2>
-      <div class="timeline">
-        <div class="t-item">
-          <h5 class="mb-1">IT Support Specialist — Upwork (Remote)</h5>
-          <p class="text-secondary small mb-2">Feb 2020 – Present</p>
-          <ul>
-            <li>Provided support for Windows, VPN/Wi-Fi, and peripherals.</li>
-            <li>Logged and resolved tickets in JIRA; followed SLA processes.</li>
-            <li>Authored KB articles and runbooks to improve efficiency.</li>
-          </ul>
-        </div>
-        <div class="t-item">
-          <h5 class="mb-1">JavaScript Developer — Dimension Technology Solutions</h5>
-          <p class="text-secondary small mb-2">Sep 2018 – Jan 2020</p>
-          <ul>
-            <li>Supported web-based apps and deployment workflows.</li>
-            <li>Collaborated with compliance teams to align with security standards.</li>
-          </ul>
-        </div>
-      </div>
+  <!-- 🔹 CONTACT -->
+  <section id="contact" class="py-5 bg-gradient-dark text-center">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-primary mb-4">Contact Me</h2>
+      <p class="text-light mb-4">Send me a message — I’d love to connect!</p>
+
+      <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST" class="mx-auto" style="max-width:500px;">
+        <div class="mb-3"><input type="text" name="name" class="form-control" placeholder="Your Name" required></div>
+        <div class="mb-3"><input type="email" name="email" class="form-control" placeholder="Your Email" required></div>
+        <div class="mb-3"><textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea></div>
+        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+      </form>
     </div>
   </section>
 
-  <!-- ===== EDUCATION ===== -->
-  <section id="education" class="py-6 bg-body-secondary">
-    <div class="container">
-      <h2 class="mb-4 text-center">Education & Certifications</h2>
-      <div class="row g-3">
-        <div class="col-md-6">
-          <div class="p-4 border rounded-4 h-100">
-            <h6 class="fw-bold mb-1">B.S., Cybersecurity & Information Assurance</h6>
-            <p class="small text-secondary mb-0">Western Governors University — Dec 2026 (In progress)</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="p-4 border rounded-4 h-100">
-            <h6 class="fw-bold mb-1">ITIL® 4 Foundation • CompTIA A+</h6>
-            <p class="small text-secondary mb-0">Certifications</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <button id="scrollTopBtn" title="Back to top">↑</button>
 
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="py-6">
-    <div class="container">
-      <h2 class="mb-4 text-center">Contact Me</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <form id="contactForm" class="p-4 border rounded-4 bg-body-tertiary">
-            <div class="row g-3">
-              <div class="col-md-6">
-                <label class="form-label">Name</label>
-                <input name="name" class="form-control" placeholder="Your name" required>
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Email</label>
-                <input name="email" type="email" class="form-control" placeholder="you@example.com" required>
-              </div>
-              <div class="col-12">
-                <label class="form-label">Message</label>
-                <textarea name="message" rows="5" class="form-control" placeholder="Your message" required></textarea>
-              </div>
-            </div>
-            <div class="d-flex gap-3 align-items-center mt-3">
-              <button class="btn btn-primary" type="submit"><i class="bi bi-envelope-paper me-2"></i>Send</button>
-              <a class="btn btn-outline-secondary" href="mailto:emma.phommatha@gmail.com">Or open email app</a>
-              <div id="formStatus" class="small text-secondary ms-auto" role="status"></div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="py-4 border-top text-center small text-secondary">
-    © <span id="year"></span> Emma Phommatha. All rights reserved.
+  <footer class="text-center py-4 border-top border-secondary text-secondary">
+    © <span id="year"></span> Emma Phommatha | Built with ❤️ using Bootstrap, Animate.css, AOS & Typed.js
   </footer>
 
+  <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
