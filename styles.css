@@ -1,25 +1,51 @@
-:root {
-  --hero-grad: radial-gradient(1000px 600px at 10% -10%, rgba(0,115,230,.18), transparent),
-               radial-gradient(900px 600px at 90% 10%, rgba(0,191,255,.18), transparent);
+/* ==== DARK THEME + GRADIENT ==== */
+body.dark-mode {
+  background: linear-gradient(120deg,#0d1117,#161b22,#0d1117);
+  background-size:200% 200%;
+  animation: gradientShift 15s ease infinite;
+  color:#e6edf3;
+}
+@keyframes gradientShift{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
-.py-6 { padding-block: 3.5rem; }
-.bg-gradient {
-  background: var(--hero-grad),
-  linear-gradient(180deg, color-mix(in oklab, var(--bs-body-bg) 90%, transparent), var(--bs-body-bg));
+/* NAV */
+.navbar-dark .nav-link:hover,
+.nav-link.active{color:#60a5fa!important;border-bottom:2px solid #2563eb}
+
+/* HERO */
+.hero img{border:3px solid #222;transition:transform .3s ease-out}
+.skill-card{
+  background:linear-gradient(145deg,#161b22,#0d1117);
+  border-radius:12px;padding:25px;text-align:center;color:#e6edf3;
+  box-shadow:0 6px 15px rgba(0,0,0,.4);
+  transition:transform .3s ease,box-shadow .3s ease
 }
-
-.photo-wrap { border-radius: 1.25rem; overflow: hidden; }
-.floating { animation: float 6s ease-in-out infinite; }
-@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
-
-.timeline { display: grid; gap: 1.25rem; }
-.timeline .t-item {
-  background: var(--bs-body-bg);
-  border: 1px solid var(--bs-border-color);
-  border-radius: 1rem;
-  padding: 1rem 1.25rem;
+.skill-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 20px #3b82f6;
+  border:1px solid #2563eb
 }
-.timeline ul { margin: 0; padding-left: 1.1rem; }
+.btn:hover{box-shadow:0 0 10px #2563eb,0 0 20px #3b82f6,0 0 40px #60a5fa}
+.bg-gradient-dark{background:linear-gradient(180deg,#0d1117,#161b22)}
+.filter-btn.active{background:#2563eb;color:#fff}
 
-a:hover { text-decoration: underline; }
+/* === TYPED CURSOR === */
+#typed-text{font-size:1.25rem;min-height:1.5em;white-space:nowrap;overflow:hidden;border-right:3px solid #2563eb}
+.typed-cursor{color:#60a5fa;animation:blink .7s infinite,glow 1.5s ease-in-out infinite alternate}
+@keyframes blink{50%{opacity:0}}
+@keyframes glow{from{text-shadow:0 0 4px #60a5fa}to{text-shadow:0 0 12px #2563eb,0 0 20px #3b82f6}}
+
+/* === FADE SECTIONS === */
+section{opacity:0;transform:translateY(40px);transition:all .8s ease}
+section.visible{opacity:1;transform:translateY(0)}
+
+/* === SCROLL TOP BTN === */
+#scrollTopBtn{
+  position:fixed;bottom:30px;right:30px;background:#2563eb;color:#fff;border:none;
+  padding:10px 15px;border-radius:8px;font-size:1.2rem;cursor:pointer;
+  display:none;box-shadow:0 0 10px #2563eb;transition:opacity .3s
+}
+#scrollTopBtn:hover{opacity:.8}
