@@ -3,22 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Emma Phommatha · Application Support Specialist</title>
-  <meta name="description" content="Application Support & IT professional portfolio." />
+  <title>Emma Phommatha | Application Support Specialist</title>
+  <meta name="description" content="Portfolio of Emma Phommatha, Application Support & IT professional." />
 
-  <!-- Bootstrap 5.3 -->
+  <!-- Bootstrap / Icons / Animate.css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <!-- Animate.css for simple wow-factor -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-  <!-- Our styles -->
+
   <link href="styles.css" rel="stylesheet">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary shadow-sm">
+  <!-- ===== NAVBAR ===== -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top bg-body-tertiary shadow-sm">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#home">EP<span class="text-primary">.</span></a>
 
@@ -37,26 +35,26 @@
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           <li class="nav-item">
             <button id="themeToggle" class="btn btn-sm btn-outline-primary ms-lg-2" type="button"
-                    aria-label="Toggle dark mode">
-              <i class="bi bi-moon-stars"></i>
-            </button>
+                    aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- ===== HERO ===== -->
   <header id="home" class="py-6 py-lg-7 bg-gradient position-relative overflow-hidden">
     <div class="container">
       <div class="row align-items-center g-4">
         <div class="col-12 col-lg-6 text-center text-lg-start">
-          <span class="badge rounded-pill text-bg-primary mb-3 animate__animated animate__fadeInDown">Application Support</span>
+          <span class="badge rounded-pill text-bg-primary mb-3 animate__animated animate__fadeInDown">
+            Application Support Specialist
+          </span>
           <h1 class="display-5 fw-bold lh-sm animate__animated animate__fadeInUp">
-            Hi, I’m <span class="text-primary">Emma Phommatha</span> — I keep business apps running smoothly.
+            Hi, I’m <span class="text-primary">Emma Phommatha</span>
           </h1>
           <p class="lead text-secondary mt-3 animate__animated animate__fadeInUp animate__delay-1s">
-            Troubleshooting, incident management, documentation, and automation to boost efficiency.
+            I troubleshoot business apps, streamline fixes, and craft documentation that reduces repeat issues.
           </p>
           <div class="d-flex gap-2 justify-content-center justify-content-lg-start mt-4">
             <a class="btn btn-primary btn-lg" href="#contact"><i class="bi bi-send me-2"></i>Contact Me</a>
@@ -65,19 +63,173 @@
         </div>
 
         <div class="col-12 col-lg-6 d-flex justify-content-center">
-          <!-- Your photo (dog image for now) -->
-          <div class="photo-wrap shadow-lg animate__animated animate__zoomIn">
-            <img src="assets/dog-placeholder.jpg" class="img-fluid rounded-4 floating" alt="Friendly golden retriever in a blue raincoat with rubber ducks">
+          <!-- Dog photo in hero section -->
+          <figure class="photo-wrap shadow-lg animate__animated animate__zoomIn">
+            <img src="dog-placeholder.jpg" class="img-fluid rounded-4 floating"
+                 alt="Golden retriever in a blue raincoat with rubber ducks">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="py-6">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="mb-3">About Me</h2>
+          <p class="text-secondary">
+            Application Support & IT professional with hands-on experience troubleshooting business
+            applications, end-user systems, and networks. CompTIA A+ and ITIL® 4 Foundation certified.
+            Skilled in ticketing/incident management, documentation, and scripting to improve efficiency.
+          </p>
+          <ul class="list-unstyled small text-secondary">
+            <li><i class="bi bi-geo-alt text-primary me-2"></i>Austin, TX</li>
+            <li><i class="bi bi-envelope text-primary me-2"></i>
+              <a href="mailto:emma.phommatha@gmail.com">emma.phommatha@gmail.com</a></li>
+            <li><i class="bi bi-linkedin text-primary me-2"></i>
+              <a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="stat p-4 text-center border rounded-4">
+                <div class="fs-2 fw-bold text-primary">SLA</div>
+                <p class="small text-secondary mb-0">Escalation & triage</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat p-4 text-center border rounded-4">
+                <div class="fs-2 fw-bold text-primary">Docs</div>
+                <p class="small text-secondary mb-0">KBs & runbooks</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="py-6 bg-body-secondary">
+    <div class="container">
+      <h2 class="mb-4 text-center">Skills</h2>
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-3">
+          <div class="p-4 border rounded-4 h-100">
+            <h6 class="fw-bold mb-2"><i class="bi bi-tools me-2 text-primary"></i>Application & User Support</h6>
+            <p class="small text-secondary mb-0">Windows 10/11 • VPN/Wi-Fi • Printers & peripherals</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="p-4 border rounded-4 h-100">
+            <h6 class="fw-bold mb-2"><i class="bi bi-ticket-detailed me-2 text-primary"></i>Ticketing & Workflow</h6>
+            <p class="small text-secondary mb-0">JIRA • Incident triage • Escalation management</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="p-4 border rounded-4 h-100">
+            <h6 class="fw-bold mb-2"><i class="bi bi-journal-text me-2 text-primary"></i>Documentation & Training</h6>
+            <p class="small text-secondary mb-0">User guides • Onboarding checklists • KBs</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="p-4 border rounded-4 h-100">
+            <h6 class="fw-bold mb-2"><i class="bi bi-cpu me-2 text-primary"></i>Technical Skills</h6>
+            <p class="small text-secondary mb-0">Python • Bash • JavaScript • Power BI (basic)</p>
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- decorative bubbles -->
-    <div class="bubble bubble-1"></div>
-    <div class="bubble bubble-2"></div>
-    <div class="bubble bubble-3"></div>
-  </header>
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="py-6">
+    <div class="container">
+      <h2 class="mb-4 text-center">Experience</h2>
+      <div class="timeline">
+        <div class="t-item">
+          <h5 class="mb-1">IT Support Specialist — Upwork (Remote)</h5>
+          <p class="text-secondary small mb-2">Feb 2020 – Present</p>
+          <ul>
+            <li>Provided support for Windows, VPN/Wi-Fi, and peripherals.</li>
+            <li>Logged and resolved tickets in JIRA; followed SLA processes.</li>
+            <li>Authored KB articles and runbooks to improve efficiency.</li>
+          </ul>
+        </div>
+        <div class="t-item">
+          <h5 class="mb-1">JavaScript Developer — Dimension Technology Solutions</h5>
+          <p class="text-secondary small mb-2">Sep 2018 – Jan 2020</p>
+          <ul>
+            <li>Supported web-based apps and deployment workflows.</li>
+            <li>Collaborated with compliance teams to align with security standards.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- ABOUT -->
-  <section id="about
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="py-6 bg-body-secondary">
+    <div class="container">
+      <h2 class="mb-4 text-center">Education & Certifications</h2>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="p-4 border rounded-4 h-100">
+            <h6 class="fw-bold mb-1">B.S., Cybersecurity & Information Assurance</h6>
+            <p class="small text-secondary mb-0">Western Governors University — Dec 2026 (In progress)</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 border rounded-4 h-100">
+            <h6 class="fw-bold mb-1">ITIL® 4 Foundation • CompTIA A+</h6>
+            <p class="small text-secondary mb-0">Certifications</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="py-6">
+    <div class="container">
+      <h2 class="mb-4 text-center">Contact Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form id="contactForm" class="p-4 border rounded-4 bg-body-tertiary">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Name</label>
+                <input name="name" class="form-control" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input name="email" type="email" class="form-control" placeholder="you@example.com" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Message</label>
+                <textarea name="message" rows="5" class="form-control" placeholder="Your message" required></textarea>
+              </div>
+            </div>
+            <div class="d-flex gap-3 align-items-center mt-3">
+              <button class="btn btn-primary" type="submit"><i class="bi bi-envelope-paper me-2"></i>Send</button>
+              <a class="btn btn-outline-secondary" href="mailto:emma.phommatha@gmail.com">Or open email app</a>
+              <div id="formStatus" class="small text-secondary ms-auto" role="status"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="py-4 border-top text-center small text-secondary">
+    © <span id="year"></span> Emma Phommatha. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
