@@ -1,0 +1,35 @@
+:root{
+  --hero-grad: radial-gradient(1000px 600px at 10% -10%, rgba(0,115,230,.18), transparent),
+               radial-gradient(900px 600px at 90% 10%, rgba(0,191,255,.18), transparent);
+}
+
+/* spacing helpers */
+.py-6{padding-block:3.5rem}
+.py-7{padding-block:5rem}
+
+/* hero */
+.bg-gradient{background: var(--hero-grad), linear-gradient(180deg, color-mix(in oklab, var(--bs-body-bg) 90%, transparent), var(--bs-body-bg));}
+.photo-wrap{border-radius:1.25rem; overflow:hidden; background: var(--bs-body-bg);}
+.floating{animation: float 6s ease-in-out infinite;}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+/* bubbles */
+.bubble{position:absolute; border-radius:50%; filter:blur(20px); opacity:.45; pointer-events:none;}
+.bubble-1{width:180px;height:180px;background:#7fd3ff;left:-40px;top:-40px;animation: drift 18s linear infinite;}
+.bubble-2{width:120px;height:120px;background:#aad9ff;right:15%;top:10%;animation: drift 22s linear infinite reverse;}
+.bubble-3{width:160px;height:160px;background:#9ed2ff;right:-30px;bottom:-30px;animation: drift 26s linear infinite;}
+@keyframes drift{0%{transform:translate(0,0)}50%{transform:translate(10px,-10px)}100%{transform:translate(0,0)}}
+
+/* timeline */
+.timeline{display:grid; gap:1.25rem}
+.timeline .t-item{background: var(--bs-body-bg); border:1px solid var(--bs-border-color); border-radius:1rem; padding:1rem 1.25rem;}
+.timeline ul{margin:0; padding-left:1.1rem}
+
+/* stats */
+.stat{background: var(--bs-body-bg);}
+
+/* smooth hover */
+a:hover{text-decoration: underline}
+
+/* dark mode polish */
+[data-bs-theme="dark"] .bubble{opacity:.26}
